@@ -1,0 +1,22 @@
+Existing backend sample: backend/test_backend.py
+
+Case: Four-city round trip (Berlin, Prague, Vienna, Munich)
+Start index: 0
+Round trip: true
+Distance unit: km
+
+Distance matrix:
+[
+  [0.0, 280.0, 524.0, 504.0],
+  [280.0, 0.0, 252.0, 382.0],
+  [524.0, 252.0, 0.0, 355.0],
+  [504.0, 382.0, 355.0, 0.0]
+]
+
+Checks performed by the existing test and src/solution.py:
+- Run Nearest Neighbor, Held-Karp, and Brute Force.
+- Run the existing all-algorithm comparison on this same matrix.
+- Assert that Held-Karp and Brute Force return the same distance.
+
+The algorithms are not required to return the same tour ordering when multiple
+optimal tours have the same distance.
